@@ -31,8 +31,8 @@ import { fetchData, postData } from "./components/TheDataMiner.js";
         data: {
             message: "Hello from Vue!",
             anotherMessage: "more text, so simple! much winning",
-            removeAformat: true,
-            show_bio_data: false,
+            // removeAformat: true,
+            show_data: false,
             carModels: [],
             currentModelData: {}
         },
@@ -53,15 +53,12 @@ import { fetchData, postData } from "./components/TheDataMiner.js";
         methods: {
             carThumbSelected(item){
                 console.log("clicked on a list item: ", item.name);
-                this.show_bio_data = this.show_bio_data ? false : true;
+                this.show_data = this.show_data ? false : true;
                 this.currentModelData = item;
             }
            
 
             
-                       
-
-           
         }
 
         

@@ -28,21 +28,36 @@
 			</ul>
 		</nav>
     </header>
-    
-
-
+    <div id="slider">
+        <h1>New Colors</h1>
+		<figure>
+            <img src="images/car.png" width="100px"> 
+            <img src="images/car1.png" width="100px"> 
+            <img src="images/car2.png" width="100px">  
+            <img src="images/car3.png" width="100px"> 
+           
+            
+            
+			
+		</figure>
+	</div>
     <main id="app">
+        <!-- <img src="images/car.png"> -->
+        <div class="title">
+            Click on Cooper to know more
+        </div>
         <section class="container">
-            <div class="thumbnails">
-                <thumbnail-card @showmydata="carThumbSelected" v-for="item in carModels" :item="item" :key="item.id"></thumbnail-card>
-            </div>
-
-            <div class="carContent hideContent" :class="{'show-data' : show_bio_data}">
+            <div class="carContent hideContent" :class="{'show-data' : show_data}">
                 
                 <h2>{{ currentModelData.name}}</h2>
                 <p>{{ currentModelData.about}}</p>
                 <img :src="'images/' + currentModelData.image" alt="">
             </div>
+            <div class="thumbnails">
+                <thumbnail-card @showmydata="carThumbSelected" v-for="item in carModels" :item="item" :key="item.id"></thumbnail-card>
+            </div>
+
+            
         </section>
         
     </main>
