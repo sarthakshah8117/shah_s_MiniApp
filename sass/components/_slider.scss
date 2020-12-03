@@ -1,11 +1,15 @@
-#slider {
-    overflow: hidden;
-    margin-top: 30px;
 
-    h1 {
-        text-align: center;
-    }
+#slider {
+	overflow: hidden;
+	margin-top: 30px;
+
+	h1 {
+		text-align: center;
+	}
 }
+
+
+
 #slider figure {
 	position: relative;
 	width: 500%;
@@ -13,6 +17,8 @@
 	left: 0;
 	animation: 10s slider infinite;
 }
+
+
 #slider figure img {
 	width: 20%;
 	float: left;

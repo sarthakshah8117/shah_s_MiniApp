@@ -5,8 +5,6 @@ import { fetchData, postData } from "./components/TheDataMiner.js";
 (() => {
 
     Vue.component("thumbnail-card",{
-        // showBioData: false,
-        // currentModelData: {},
         props: ["item"],
         template: `<img  @click="logClicked" :src="'images/' + item.image" alt="item images">`,
 
